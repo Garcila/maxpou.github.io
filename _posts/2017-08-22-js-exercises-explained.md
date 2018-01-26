@@ -249,7 +249,7 @@ We are using here the simple equality operator (*e.g.* ==) by opposition to stri
 * `isBig(1)` pass the condition `thing == 1` as expected.
 * `isBig([2])` will pass the condition `thing == 2`. When comparing an array to a number, the array will be converted to a number. This is a part of the [Abstract Equality Comparison Algorithm](http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3). According to this algorithm, if we compare a number with an Object *(reminder: arrays are object in JS)*, this array will be converted to an array. Here, there is only one item inside so `[2] == 2`.
 
-Because this algorithm is obscure for the most common developers, we should aboid this operator ([ESLint eqeqeq rule is your friend 👍](http://eslint.org/docs/rules/eqeqeq)).
+Because this algorithm is obscure for the most common developers, we should avoid this operator ([ESLint eqeqeq rule is your friend 👍](http://eslint.org/docs/rules/eqeqeq)).
 
 ```js
 // weird results
